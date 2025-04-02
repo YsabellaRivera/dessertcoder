@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dessert Coder: Dessert Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Dessert Coder: Dessert Challenge</h1>
+
+  <div class="dessert-select">
+    <label for="dessert">Choose a Dessert:</label>
+    <select id="dessert" onchange="selectDessert(this.value)">
+      <option value="opera">Opera Cake</option>
+      <option value="dalgona">Dalgona Candy</option>
+    </select>
+  </div>
+
+  <div id="operaSection">
+    <div class="order-box">
+      <strong>Customer Order:</strong>
+      <p id="customerOrder">Loading...</p>
+    </div>
+
+    <div class="cake-container" id="cake"></div>
+
+    <div class="controls">
+      <button onclick="addLayer('sponge')">Add Sponge Layer</button>
+      <button onclick="addLayer('ganache')">Add Ganache Layer</button>
+      <button onclick="addLayer('cream')">Add Cream Layer</button>
+      <button onclick="clearCake()">Clear Cake</button>
+      <button onclick="checkCake()">Serve Cake</button>
+    </div>
+
+    <div class="input-section">
+      <p>Or type your code below:</p>
+      <textarea id="codeInput" rows="4" cols="40">// Example:
+addLayer("sponge");</textarea><br>
+      <button onclick="runCode()">Run Code</button>
+    </div>
+  </div>
+
+  <div id="dalgonaSection" style="display:none;">
+    <h2>Dalgona Candy Challenge</h2>
+    <p>Draw a perfect shape in your candy without breaking it!</p>
+    <p style="font-style: italic;">(Coming Soon)</p>
+  </div>
+
+  <p id="resultMessage"></p>
+
+  <audio id="addSound" src="sounds/add.mp3" preload="auto"></audio>
+  <audio id="successSound" src="sounds/success.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

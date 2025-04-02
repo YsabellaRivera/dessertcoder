@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #6b3e26;
+  margin-top: 20px;
+}
+
+.dessert-select {
+  margin: 15px auto;
+}
+
+.order-box {
+  background-color: #ffeecc;
+  border: 1px solid #cc9900;
+  margin: 10px auto;
+  padding: 10px;
+  width: 400px;
+  font-size: 16px;
+}
+
+.cake-container {
+  width: 250px;
+  margin: 20px auto;
+  border: 2px solid #444;
+  min-height: 350px;
+  background-color: #f5e9dc;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.layer {
+  height: 50px;
+  width: 100%;
+}
+
+.sponge {
+  background-color: #dcb88f;
+}
+
+.ganache {
+  background-color: #4b2e2b;
+}
+
+.cream {
+  background-color: #fff0e1;
+}
+
+.controls, .input-section {
+  margin: 20px auto;
+  width: 400px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 14px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#resultMessage {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#dalgonaSection {
+  margin-top: 20px;
+}
